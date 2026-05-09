@@ -1,0 +1,72 @@
+/**
+ * @name Roxy Migurdia Theme
+ * @author Orifleqm
+ * @description BetterDiscord theme inspired by Roxy Migurdia
+ */
+
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+
+:root {
+  --background-image: url("https://github.com/notleqm/Roxy-betterds-theme/blob/main/Roxy%20M.png?raw=true");
+
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+
+  /* ClearVision переменные (не всегда работают, но оставляем) */
+  --background-shading: 30% !important;
+  --background-overlay: rgba(0, 0, 0, 0.3) !important;
+
+  /* текст */
+  --text-normal: #d8f3ff;
+  --text-muted: #88b7d8;
+  --channels-default: #8ecfff;
+
+  /* статусы */
+  --online-color: #60a5fa;
+  --idle-color: #38bdf8;
+  --dnd-color: #1d4ed8;
+  --streaming-color: #7c3aed;
+}
+
+/* =======================
+   🌑 ОСНОВНОЙ ФОН DISCORD
+======================= */
+
+#app-mount, .app-3xd6d0, .bg-1QIAus {
+  background: transparent !important;
+}
+
+
+/* =======================
+   ✨ ТЕКСТ (ЦВЕТНОЙ)
+======================= */
+
+span, div, p, h1, h2, h3, h4, h5, h6,
+textarea, input, button, a {
+  color: var(--text-normal) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85) !important;
+}
+
+
+/* =======================
+   🟢 СТАТУСЫ
+======================= */
+
+rect[fill="#23a55a"],
+rect[fill="#3ba55c"] {
+  fill: var(--online-color) !important;
+}
+
+rect[fill="#f0b232"] {
+  fill: var(--idle-color) !important;
+}
+
+rect[fill="#f23f43"] {
+  fill: var(--dnd-color) !important;
+}
+
+rect[fill="#593695"] {
+  fill: var(--streaming-color) !important;
+}
+
